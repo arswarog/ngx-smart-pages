@@ -1,0 +1,10 @@
+<div class="menu">
+    <span (click)="load('custom')">Page 1</span>
+    <span (click)="load('custom-2')">Page 2</span>
+    <span (click)="load('custom-3')">Page 3</span>
+    <span (click)="load('clean')">Clean</span>
+</div>
+<ngx-smart-pages [pageConfig]="page"
+                 [gap]="5"
+                 [baseWidget]="base"
+                 [columns]="['400px', 'auto', '400px']"></ngx-smart-pages>

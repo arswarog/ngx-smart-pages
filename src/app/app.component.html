@@ -1,0 +1,21 @@
+<div id="wrapper">
+  <header>
+    <div class="container">
+      NGX SMART PAGES
+      <ul class="navbar">
+        <li><a [routerLink]="['/page1']">Page 1</a></li>
+        <li><a [routerLink]="['/custom']">Custom</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      footer
+    </div>
+  </footer>
+</div>

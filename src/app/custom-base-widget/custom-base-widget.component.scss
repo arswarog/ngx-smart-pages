@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+
+    span {
+        margin: 5px 10px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  --width: 1200px;
+  --black: #343a40;
+  --border: rgba(0, 0, 0, 0.125);
+
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  //width: var(--width);
+  max-width: var(--width);
+
+  padding: 8px 16px;
+}
+
+header,
+main,
+footer {
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 42px;
+  width: 100vw;
+
+  background: var(--black);
+  font-size: 20px;
+  color: #fff;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    float: right;
+    font-size: 16px;
+
+    li {
+      list-style: none;
+
+      a {
+        color: rgba(255, 255, 255, .5);
+        text-decoration: none;
+        transition: 0.3s;
+        display: block;
+        padding: .5rem 1rem;
+
+        :hover {
+          color: rgba(255, 255, 255, .75);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: var(--black);
+  color: #fff;
+}
+
+main {
+}
+
+#wrapper {
+  padding-top: 42px;
+}
