@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-smart-pages": [
+        "dist/ngx-smart-pages"
+      ],
+      "ngx-smart-pages/*": [
+        "dist/ngx-smart-pages/*"
+      ]
+    }
   }
 }
