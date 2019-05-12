@@ -1,5 +1,9 @@
 /// Public interfaces
 
+import { EventEmitter, InjectionToken, Type } from '@angular/core';
+import { NgxSmartWidgetComponent } from './widget/widget.component';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
+
 export interface IWidgetMeta {
     fullwidth?: boolean;
     // sizes?: IWidgetSize[];
@@ -34,6 +38,29 @@ export interface IPageWidgetItem {
     data?: { [key: string]: any };
 }
 
+export const NGX_SMART_PAGES_CONFIG = new InjectionToken('ngxSmartPagesConfig');
+
+export enum SmartWidgetStatus {
+    Ready = 'ready',
+    Loading = 'loading',
+    Error = 'error',
+}
+
+export interface ISmartWidget {
+    uuid: string;
+    title: string;
+    widgetStatus$: Subject<SmartWidgetStatus>;
+    widgetError$?: Observable<ISmartWidgetError>;
+}
+
+export interface ISmartWidgetError {
+    code?: string | number;
+    title: string;
+    description: string;
+    details?: any;
+    fatal?: boolean;
+}
+
 /// Inner interfaces
 
 export type IWidgetReducer = (input: IInputToReduce) => IReducerResult;
@@ -57,11 +84,7 @@ export interface IWidgetPosition {
     position: string;
 }
 
-export interface ISmartWidget {
-    uuid: string;
-    title: string;
-}
-
 export interface ISmartPagesConfig {
     debug?: boolean;
+    baseWidget?: Type<NgxSmartWidgetComponent>;
 }

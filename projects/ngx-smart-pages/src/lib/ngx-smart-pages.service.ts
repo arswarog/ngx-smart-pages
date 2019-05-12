@@ -1,5 +1,5 @@
 import { ElementRef, Inject, Injectable } from '@angular/core';
-import { IInputToReduce, IReducerResult, ISmartPagesConfig, IWidgetConfig } from './ngx-smart-pages.interface';
+import { IInputToReduce, IReducerResult, ISmartPagesConfig, IWidgetConfig, NGX_SMART_PAGES_CONFIG } from './ngx-smart-pages.interface';
 import { none } from './reducers/none';
 
 interface IPosition {
@@ -65,7 +65,7 @@ export class NgxSmartPagesService {
         ].join('/');
     }
 
-    constructor(@Inject('config') private config: ISmartPagesConfig) {
+    constructor(@Inject(NGX_SMART_PAGES_CONFIG) public config: ISmartPagesConfig) {
         this.group('Start service');
         this.log('Config:', config);
         this.log('Available widgets:', availableWidgets);

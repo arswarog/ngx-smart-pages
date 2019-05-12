@@ -1,6 +1,7 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { SmartWidget } from '../../ngx-smart-pages.service';
-import { ISmartWidget } from '../../ngx-smart-pages.interface';
+import { ISmartWidget, SmartWidgetStatus } from '../../ngx-smart-pages.interface';
+import { BehaviorSubject } from 'rxjs';
 
 @SmartWidget({
     widgetID: 'debug',
@@ -11,6 +12,8 @@ import { ISmartWidget } from '../../ngx-smart-pages.interface';
     styleUrls  : ['./debug.component.css'],
 })
 export class DebugComponent implements OnInit, OnChanges, ISmartWidget {
+    public widgetStatus$ = new BehaviorSubject<SmartWidgetStatus>(SmartWidgetStatus.Loading);
+
     public uuid: string;
     public title: string;
 

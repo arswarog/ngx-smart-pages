@@ -3,7 +3,7 @@ import { NgxSmartPagesComponent } from './ngx-smart-pages.component';
 import { NgxSmartPagesService } from './ngx-smart-pages.service';
 import { NgxSmartWidgetComponent } from './widget/widget.component';
 import { DebugComponent } from './widgets/debug/debug.component';
-import { ISmartPagesConfig } from './ngx-smart-pages.interface';
+import { ISmartPagesConfig, NGX_SMART_PAGES_CONFIG } from './ngx-smart-pages.interface';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -28,7 +28,7 @@ export class NgxSmartPagesModule {
         return {
             ngModule : NgxSmartPagesModule,
             providers: [
-                {provide: 'config', useValue: config},
+                {provide: NGX_SMART_PAGES_CONFIG, useValue: config},
                 NgxSmartPagesService,
             ],
         };

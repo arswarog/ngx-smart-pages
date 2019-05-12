@@ -43,7 +43,10 @@ export class NgxSmartPagesComponent implements OnInit, OnChanges {
 
     constructor(private grid: ElementRef<HTMLDivElement>,
                 private service: NgxSmartPagesService,
-                private componentFactoryResolver: ComponentFactoryResolver) { }
+                private componentFactoryResolver: ComponentFactoryResolver) {
+        if (service.config.baseWidget)
+            this.baseWidget = service.config.baseWidget;
+    }
 
     ngOnInit() {
         this.grid.nativeElement.style.display = 'grid';
