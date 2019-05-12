@@ -16,11 +16,7 @@ export class Page1Component implements OnInit {
                 'title'  : 'history0',
                 'position': '1/1/1/1',
                 'data'    : {
-                    'title'     : 'My Targets',
-                    'color'     : 'default',
-                    'value'     : 246125,
-                    'currency'  : '$',
-                    'lastChange': 0.138,
+                    'image'     : 'https://avatars.mds.yandex.net/get-pdb/1691218/7aa84b52-bb2c-4ddb-be85-0915cb5cbfaf/orig',
                 },
             },
             {
@@ -29,8 +25,7 @@ export class Page1Component implements OnInit {
                 'title'  : 'history1',
                 'position': '1/2/1/1',
                 'data'    : {
-                    'title': 'Total Profit',
-                    'color': 'active',
+                    'image'     : 'https://c.pxhere.com/photos/48/a8/cocker_spaniel_dog_cocker_spaniel_brown_pet-985891.jpg!d',
                 },
             },
             {

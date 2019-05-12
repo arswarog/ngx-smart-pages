@@ -1,19 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  --width: 1200px;
-  --black: #343a40;
-  --border: rgba(0, 0, 0, 0.125);
+    //--width: 1200px;
+    //--black: #343a40;
+    //--border: rgba(0, 0, 0, 0.125);
 
-  padding: 0;
-  margin: 0;
+    /** only for squilla */
+
+    --width: 1200px;
+    --black: #339fa6;
+    --border: #fafaf5;
+    --color: #339fa6;
+    --background: #fffff8;
+
+    color: var(--color);
+
+    $color: #339fa6;
+    $second: #c4c4c4;
+    $bgcolor: #fafaf5;
+    $xbgcolor: #fbfbef;
+    $xcolor: #e38a59;
+    $wcolor: #f9fff5;
+    $fill: #fffff8;
+    $white: #ffffff;
+    $invalid: #E7655D;
+
+    $lines-title: #D2DFDE;
+
+    $border-color: #bce3cb;
+    $border-color2: #bcecce;
+
+    background: #fafaf5;
+
+    /** end */
+
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-  margin: 0 auto;
-  //width: var(--width);
-  max-width: var(--width);
+    margin: 0 auto;
+    //width: var(--width);
+    max-width: var(--width);
 
-  padding: 8px 16px;
+    padding: 8px 16px;
 }
 
 header,
@@ -22,51 +51,51 @@ footer {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  height: 42px;
-  width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 42px;
+    width: 100vw;
 
-  background: var(--black);
-  font-size: 20px;
-  color: #fff;
+    background: var(--black);
+    font-size: 20px;
+    color: #fff;
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style: none;
 
-    float: right;
-    font-size: 16px;
+        float: right;
+        font-size: 16px;
 
-    li {
-      list-style: none;
+        li {
+            list-style: none;
 
-      a {
-        color: rgba(255, 255, 255, .5);
-        text-decoration: none;
-        transition: 0.3s;
-        display: block;
-        padding: .5rem 1rem;
+            a {
+                color: rgba(255, 255, 255, .5);
+                text-decoration: none;
+                transition: 0.3s;
+                display: block;
+                padding: .5rem 1rem;
 
-        :hover {
-          color: rgba(255, 255, 255, .75);
+                :hover {
+                    color: rgba(255, 255, 255, .75);
+                }
+            }
         }
-      }
     }
-  }
 }
 
 footer {
-  background: var(--black);
-  color: #fff;
+    background: var(--black);
+    color: #fff;
 }
 
 main {
 }
 
 #wrapper {
-  padding-top: 42px;
+    padding-top: 42px;
 }

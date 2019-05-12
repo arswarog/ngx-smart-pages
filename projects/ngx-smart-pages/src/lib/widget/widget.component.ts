@@ -23,7 +23,7 @@ export class NgxSmartWidgetComponent implements OnInit, OnChanges {
     @Input() data: any = null;
     @Input() position: string = null;
     @Input() title: string = null;
-    private instance: any = null;
+    private instance: OnChanges = null;
 
     @ViewChild('widget', {read: ViewContainerRef}) widget: ViewContainerRef;
 
@@ -63,12 +63,14 @@ export class NgxSmartWidgetComponent implements OnInit, OnChanges {
     private update() {
         if (this.instance) {
             Object.assign(this.instance,
-                // this.data,
+                this.data,
                 {
                     uuid : this.uuid,
                     title: this.title,
                 },
             );
+            if ('ngOnChanges' in this.instance)
+                this.instance.ngOnChanges({});
         }
     }
 }

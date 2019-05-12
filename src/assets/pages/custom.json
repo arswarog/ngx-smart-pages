@@ -3,19 +3,16 @@
         {
             "uuid": "6837699a-ec5f-46fd-915c-364f589c6265",
             "widgetID": "widget-1",
-            "position": "1/1/1/1",
+            "position": "1/1/3/1",
             "title": "My Targets",
             "data": {
-                "color": "default",
-                "value": 246125,
-                "currency": "$",
-                "lastChange": 0.138
+                "image": "https://avatars.mds.yandex.net/get-pdb/1691218/7aa84b52-bb2c-4ddb-be85-0915cb5cbfaf/orig"
             }
         },
         {
             "uuid": "43fb3e0b-9215-4bb7-83be-449ca57cee9d",
             "widgetID": "debug",
-            "position": "1/2/1/1",
+            "position": "2/2/1/1",
             "title": "Total Profit",
             "data": {
                 "color": "active"
@@ -24,7 +21,7 @@
         {
             "uuid": "f877b023-a0a0-4857-ad66-2ce6b9be4c87",
             "widgetID": "widget-1",
-            "position": "1/3/1/1",
+            "position": "2/3/1/1",
             "title": "Trader Profit",
             "data": {
                 "color": "inactive"
@@ -34,19 +31,19 @@
             "uuid": "1286c010-231a-44c7-a2eb-45333bfc0042",
             "widgetID": "widget-2",
             "title": "some title",
-            "position": "2/1/2/3"
+            "position": "3/2/1/2"
         },
         {
             "uuid": "25760530-f01a-476f-b051-3f80a4f6a4dd",
             "widgetID": "widget-3",
-            "position": "1/4/2/1",
+            "position": "1/2/1/2",
             "title": "Last analytics doing",
             "data": {}
         },
         {
             "uuid": "d58c0003-6a57-477b-90df-9a44d5ce2967",
             "widgetID": "widget-3",
-            "position": "1/5/2/1",
+            "position": "1/4/2/1",
             "title": "Last analytics doing",
             "data": {}
         },
@@ -55,13 +52,6 @@
             "widgetID": "widget-3",
             "position": "3/4/1/1",
             "title": "CryptoBank balance",
-            "data": {}
-        },
-        {
-            "uuid": "cc28a3d5-c11d-4bcc-9268-10ab54d1037a",
-            "widgetID": "widget-2",
-            "position": "3/5/1/1",
-            "title": "Quick Details",
             "data": {}
         }
     ]

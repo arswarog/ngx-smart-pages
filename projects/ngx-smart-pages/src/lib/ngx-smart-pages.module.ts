@@ -4,6 +4,7 @@ import { NgxSmartPagesService } from './ngx-smart-pages.service';
 import { NgxSmartWidgetComponent } from './widget/widget.component';
 import { DebugComponent } from './widgets/debug/debug.component';
 import { ISmartPagesConfig } from './ngx-smart-pages.interface';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations   : [
@@ -11,7 +12,9 @@ import { ISmartPagesConfig } from './ngx-smart-pages.interface';
         NgxSmartWidgetComponent,
         DebugComponent,
     ],
-    imports        : [],
+    imports        : [
+        CommonModule,
+    ],
     exports        : [
         NgxSmartPagesComponent,
     ],

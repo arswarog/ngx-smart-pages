@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SmartWidget } from 'ngx-smart-pages';
 
 @SmartWidget({
@@ -10,6 +10,8 @@ import { SmartWidget } from 'ngx-smart-pages';
     styleUrls  : ['./widget1.component.scss'],
 })
 export class Widget1Component implements OnInit {
+
+    @Input() image: string = null;
 
     constructor() { }
 

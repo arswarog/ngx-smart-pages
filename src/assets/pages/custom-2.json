@@ -32,9 +32,12 @@
         },
         {
             "uuid": "1286c010-231a-44c7-a2eb-45333bfc0042",
-            "widgetID": "widget-2",
+            "widgetID": "debug",
             "title": "some title",
-            "position": "1/1/1/1"
+            "position": "1/1/1/1",
+            "data": {
+                "url": "https://some.url/path"
+            }
         },
         {
             "uuid": "25760530-f01a-476f-b051-3f80a4f6a4dd",
